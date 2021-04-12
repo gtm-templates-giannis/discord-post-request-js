@@ -2,7 +2,7 @@ function sendData(data, endpoint) {
 //if (document.location.href.search('appspot.com') == -1) {
 var xhr = new XMLHttpRequest();
   var stringifiedData = JSON.stringify(data);
-  xhr.setRequestHeader("Content-Type", "application/json"); //added
+  xhr.setRequestHeader("Content-Type", "application/json");
   xhr.open('POST', endpoint);
   xhr.send(stringifiedData);
   xhr.onload = function () {
